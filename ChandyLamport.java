@@ -129,7 +129,7 @@ public class ChandyLamport {
 		NodeqSend qs = new NodeqSend(q);
 		NodepReceive pr = new NodepReceive(p);
 		NodeqReceive qr = new NodeqReceive(q);
-		synchronized (test2.class) {
+		synchronized (ChandyLamport.class) {
 			ps.start();
 			qr.start();
 			qs.start();
